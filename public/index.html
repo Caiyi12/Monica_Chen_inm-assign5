@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Framework</title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+</head>
+<body>
+    <!-- <header></header> -->
+     <!-- <aside></aside> -->
+    
+    <div class="d-flex">
+        <div class="flex-shrink-1">
+            <aside>
+                <div class="row">
+                <!-- left sidebar -->
+                <!-- how to make changes to the background color of the sidebar -->
+                <!-- the icons should be bootstrap icons?, if yes is it okay use different icons if the icon need to be paid?-->
+                <!-- the logo can be img?? -->
+                <!-- how to extend the sidebar -->
+                    <div class="d-flex flex-column flex-shrink-0 p-3 text-bg-dark" style="width: 280px;"> 
+                        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                            <svg class="bi pe-none me-2" width="40" height="32" aria-hidden="true">
+                                <use xlink:href="#bootstrap"></use>
+                            </svg> 
+                            <span class="fs-4">Dashboard Kit</span> 
+                        </a> 
+                        <hr> 
+                        <ul class="nav nav-pills flex-column mb-auto"> 
+                            <li> 
+                                <a href="#" class="nav-link text-white"> 
+                                    <svg class="bi pe-none me-2" width="16" height="16" aria-hidden="true">
+                                        <use xlink:href="#speedometer2"></use>
+                                    </svg>
+                                    Overview
+                                </a> 
+                            </li> 
+                            <li> 
+                                <a href="#" class="nav-link text-white"> 
+                                    <svg class="bi pe-none me-2" width="16" height="16" aria-hidden="true">
+                                        <use xlink:href="#speedometer2"></use>
+                                    </svg>
+                                    Tickets
+                                </a> 
+                            </li> 
+                            <li> 
+                                <a href="#" class="nav-link text-white"> 
+                                    <svg class="bi pe-none me-2" width="16" height="16" aria-hidden="true">
+                                        <use xlink:href="#table"></use>
+                                    </svg>
+                                    Ideas
+                                </a> 
+                            </li> 
+                            <li> 
+                                <a href="#" class="nav-link text-white"> 
+                                    <svg class="bi pe-none me-2" width="16" height="16" aria-hidden="true">
+                                        <use xlink:href="#grid"></use>
+                                    </svg>
+                                    Contacts
+                                </a> 
+                            </li> 
+                            <li> 
+                                <a href="#" class="nav-link text-white"> 
+                                    <svg class="bi pe-none me-2" width="16" height="16" aria-hidden="true">
+                                        <use xlink:href="#people-circle"></use>
+                                    </svg>
+                                    Agents
+                                </a> 
+                            </li> 
+                            <li> 
+                                <a href="#" class="nav-link text-white"> 
+                                    <svg class="bi pe-none me-2" width="16" height="16" aria-hidden="true">
+                                        <use xlink:href="#people-circle"></use>
+                                    </svg>
+                                    Articles
+                                </a> 
+                            </li> 
+
+                            <li> 
+                                <a href="#" class="nav-link text-white"> 
+                                    <svg class="bi pe-none me-2" width="16" height="16" aria-hidden="true">
+                                        <use xlink:href="#people-circle"></use>
+                                    </svg>
+                                    Agents
+                                </a> 
+                            </li> 
+                        </ul>  
+                        <hr>
+                        <ul class="nav nav-pills flex-column mb-auto"> 
+                            <li class="nav-item"> 
+                                <a href="#" class="nav-link text-white"> 
+                                    <svg class="bi pe-none me-2" width="16" height="16" aria-hidden="true">
+                                        <use xlink:href="#gear"></use>
+                                    </svg>
+                                    Settings
+                                </a> 
+                            </li> 
+                            <li class="nav-item"> 
+                                <a href="#" class="nav-link text-white"> 
+                                    <svg class="bi pe-none me-2" width="16" height="16" aria-hidden="true">
+                                        <use xlink:href="#gear"></use>
+                                    </svg>
+                                    Subscription
+                                </a> 
+                            </li> 
+                        </ul>
+                    </div>
+                </div>
+            </aside>
+        </div>
+        <div class="px-5 w-100">
+            <header>
+                <div class="row">
+                <!-- Top Nav bar  -->
+                <!-- how to make it on top of the page -->
+                    <div class="d-flex flex-wrap justify-content-center py-3 mb-4"> 
+                        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"> 
+                            <span class="fs-4">Overview</span> 
+                        </a> 
+                        <ul class="nav nav-pills"> 
+                            <li class="nav-item">
+                                <!-- search icon -->
+                                <a href="#" class="nav-link" aria-current="page">O</a>
+                            </li> 
+                            <li class="nav-item">
+                                <!-- alert icon -->
+                                <a href="#" class="nav-link">I</a>
+                            </li> 
+                            <hr>
+                            <li class="nav-item">
+                                <!-- Jones Ferdinand -->
+                                <a href="#" class="nav-link">Jone Ferdinand</a>
+                            </li>  
+                            <li class="dropdown text-end"> 
+                                <a href="#" class="text-decoration-none" aria-expanded="true">
+                                    <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle"> 
+                                </a> 
+                            </li>
+                        </ul> 
+                    </div>
+                </div>
+            </header>
+
+            <!-- how to change text color? -->
+            <main>
+                <section class="container-fluid">
+                    <div class="row row-cols-1 row-cols-md-4 mb-4 text-center g-4"> 
+                        <div class="col"> 
+                            <div class="card text-bg-light mb-1" style="max-width: 18rem;">  
+                                <div class="card-body">
+                                    <h4 class="card-title text-muted fw-medium mb-1">Unresolved</h4> 
+                                    <h1 class="card-title fs-1 fw-bold mb-0">60</h1> 
+                                </div> 
+                            </div> 
+                        </div> 
+                        <div class="col"> 
+                            <div class="card text-bg-light mb-1" style="max-width: 18rem;">  
+                                <div class="card-body">
+                                    <h4 class="card-title text-muted fw-medium mb-1">Overdue</h4> 
+                                    <h1 class="card-title fs-1 fw-bold mb-0">16</h1> 
+                                </div> 
+                            </div> 
+                        </div> 
+                        <div class="col"> 
+                            <div class="card text-bg-light mb-1" style="max-width: 18rem;">  
+                                <div class="card-body">
+                                    <h4 class="card-title text-muted fw-medium mb-1">Open</h4> 
+                                    <h1 class="card-title fs-1 fw-bold mb-0">43</h1> 
+                                </div> 
+                            </div> 
+                        </div> 
+                        <div class="col"> 
+                            <div class="card text-bg-light mb-1" style="max-width: 18rem;">  
+                                <div class="card-body">
+                                    <h4 class="card-title text-muted fw-medium mb-1">On hold</h4> 
+                                    <h1 class="card-title fs-1 fw-bold mb-0">64</h1> 
+                                </div> 
+                            </div> 
+                        </div> 
+                    </div>
+                </section>
+
+                <section class="card border mb-4">
+                    <div class="row mb-3 text-dark"> 
+                        <div class="col-md-8 themed-grid-col ">
+                            <h1 class="fw-medium">Today's trends</h1>
+                            <ul class="d-flex flex-column flex-sm-row justify-content-between align-items-center list-unstyled mb-0">
+                                <li class="text-muted fw-normal">as of 25 May 2019, 09:41 PM</li>
+                                <li class="text-muted fw-normal d-flex flex-wrap justify-content-center align-items-center">
+                                    <p>Today</p>
+                                    <p>Yesterday</p>
+                                </li>
+                            </ul>
+                            <img src="assets/img/Graph.svg" alt="Trends Chart" class="img-fluid">
+                        </div> 
+                        <div class="col-md-4  d-flex flex-column justify-content-between border-start ">
+                            <ul class="nav nav-pills flex-column mb-auto text-center">
+                                <li class="border-bottom"> 
+                                    <h5 class="card-title text-muted fw-medium mb-1">Resolved</h5> 
+                                    <h3 class="card-title fs-1 fw-bold mb-0">449</h3> 
+                                </li> 
+                                <li class="border-bottom"> 
+                                    <h5 class="card-title text-muted fw-medium mb-1">Received</h5> 
+                                    <h3 class="card-title fs-1 fw-bold mb-0">426</h3> 
+                                </li> 
+                                <li class="border-bottom"> 
+                                    <h5 class="card-title text-muted fw-medium mb-1">Average first response time</h5> 
+                                    <h3 class="card-title fs-1 fw-bold mb-0">33m</h3> 
+                                </li> 
+                                <li class="border-bottom"> 
+                                    <h5 class="card-title text-muted fw-medium mb-1">Average response time</h5> 
+                                    <h3 class="card-title fs-1 fw-bold mb-0">3h 8m</h3> 
+                                </li> 
+                                <li> 
+                                    <h5 class="card-title text-muted fw-medium mb-1">Resolution within SLA</h5> 
+                                    <h3 class="card-title fs-1 fw-bold mb-0">94%</h3> 
+                                </li> 
+                            </ul>
+                        </div> 
+                    </div>
+                </section>
+
+
+                <section class="container">
+                    <!-- how to create some space between two cards? -->
+                    <!-- how to remove the line between first and second list? -->
+                        <div class="row g-2">
+                            <div class="col card" style="width: 15rem;">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <h5 class="card-title">Unresolved tickets</h5>
+                                            <p class="card-text fw-medium text-primary-emphasis">View details</p>
+                                        </div>
+                                        <small class="card-text text-muted">Group: <span class="fw-medium">Support</span></small>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <p>Waiting on Feature Request</p>
+                                            <small class="text-muted">4238</small>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <p>Awaiting Customer Response</p>
+                                            <small class="text-muted">1005</small>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <p>Awaiting Developer Fix</p>
+                                            <small class="text-muted">914</small>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <p>Pending</p>
+                                            <small class="text-muted">281</small>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col card" style="width: 15rem;">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <h5 class="card-title">Tasks</h5>
+                                            <p class="card-text fw-medium text-primary-emphasis">View all</p>
+                                        </div>
+                                        <small class="card-text text-muted">Today</small>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <p>Create new task</p>
+                                            <!-- <i class="fas fa-accessible-icon"></i>  add icon -->
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="firstRadio" checked>
+                                        <label class="form-check-label" for="firstRadio">Finish ticket update</label>
+                                        <p class=" badge rounded-pill bg-warning fw-normal">Urgent</p>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="secondRadio">
+                                        <label class="form-check-label" for="secondRadio">Create new ticket example</label>
+                                        <p class=" badge rounded-pill bg-success fw-normal">New</p>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="thirdRadio">
+                                        <label class="form-check-label" for="thirdRadio">Update ticket report</label>
+                                        <p class=" badge rounded-pill bg-light fw-normal text-muted">Default</p>
+                                    </li>
+                                </ul>                           
+                            </div>
+                       
+                </section>
+                
+            </main>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+</body>
+</html>

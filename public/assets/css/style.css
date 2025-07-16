@@ -1,0 +1,45 @@
+.row{
+    margin: 1rem;
+}
+li{
+    list-style-type: none;
+}
+.container-col{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: 100vh;
+}
+
+/* $theme-colors: {
+  "primary":   $primary,
+  "secondary": $secondary,
+  "success":   $success,
+  "info":      $info,
+  "warning":   $warning,
+  "danger":    $danger,
+  "light":      $light,
+  "dark":       $dark
+}; */
+
+/* .container-col{
+    $colors: {
+    "blue":       $blue,
+    "indigo":     $indigo,
+    "purple":     $purple,
+    "pink":       $pink,
+    "red":        $red,
+    "orange":     $orange,
+    "yellow":     $yellow,
+    "green":      $green,
+    "teal":       $teal,
+    "cyan":       $cyan,
+    "black":      $black,
+    "white":      $white,
+    "gray":       $gray-600,
+    "gray-dark":  $gray-800
+    }
+} */
+
+
