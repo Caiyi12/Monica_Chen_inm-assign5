@@ -25,7 +25,7 @@ li {
   letter-spacing: 0.4px;
   line-height: 100%;
 }
-#sidebar #CatogoryText {
+#sidebar .CatogoryText {
   font-weight: 400;
   font-size: 16px;
   color: rgb(221, 226, 255);
@@ -47,14 +47,14 @@ li {
   color: rgb(37, 39, 51);
 }
 
-#OverviewText {
+.OverviewText {
   font-weight: 700;
   font-size: 19px;
   color: rgb(159, 162, 180);
   letter-spacing: 0.4px;
 }
 
-#OverviewNumber {
+.OverviewNumber {
   font-weight: 700;
   font-size: 40px;
   color: rgb(37, 39, 51);
@@ -62,7 +62,7 @@ li {
   line-height: 100%;
 }
 
-#TwelveText {
+.TwelveText {
   font-weight: 400;
   font-size: 12px;
   color: rgb(159, 162, 180);
@@ -78,14 +78,14 @@ li {
   line-height: 16px;
 }
 
-#NineteenText {
+.NineteenText {
   font-weight: 700;
   font-size: 19px;
   color: rgb(37, 39, 51);
   letter-spacing: 0.4px;
 }
 
-#SixteenText {
+.SixteenText {
   font-weight: 600;
   font-size: 16px;
   color: rgb(159, 162, 180);
@@ -93,7 +93,7 @@ li {
   line-height: 22px;
 }
 
-#FourteenBlueText {
+.FourteenBlueText {
   font-weight: 600;
   font-size: 14px;
   color: rgb(55, 81, 255);
@@ -101,7 +101,7 @@ li {
   line-height: 20px;
 }
 
-#FourteenText {
+.FourteenText {
   font-weight: 600;
   font-size: 14px;
   color: rgb(37, 39, 51);
@@ -117,7 +117,7 @@ li {
   line-height: 20px;
 }
 
-#TwentyFourText {
+.TwentyFourText {
   font-weight: 700;
   font-size: 24px;
   color: rgb(37, 39, 51);
@@ -125,7 +125,7 @@ li {
   line-height: 100%;
 }
 
-#small {
+.small {
   color: rgb(159, 162, 180);
 }
 
@@ -153,11 +153,34 @@ li {
   background-color: rgb(240, 241, 247);
 }
 
-#BadgeText {
-  font-weight: 700;
-  font-size: 11px;
-  color: #FFFFFF;
-  line-height: 100%;
+@media (max-width: 650px) {
+
+  .container-col {
+      flex-direction: column; 
+      height: auto; 
+  }
+
+  #sidebar { 
+      width: 200px; 
+      height: auto; 
+      position: relative; 
+      border-right: none !important; 
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+      padding-bottom: 16px;
+  }
+
+  .GapMB {
+    margin-bottom: 16px; /* Add some space at the bottom of the card body */
+  }
+
+  .FlexWrap{
+    flex-wrap: wrap;
+  }
+
+  #Urgent, #New, #Default {
+      margin-left: auto; 
+      margin-right: 0;
+  }
 }
 
 /*# sourceMappingURL=stylesheet.css.map */
