@@ -5,106 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Frontend Framework</title>
 
-    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- <link rel="stylesheet" href="assets/css/style.css">  -->
+    <link rel="stylesheet" href="assets/css/stylesheet.css">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
 </head>
 <body>
-    <!-- <header></header> -->
-     <!-- <aside></aside> -->
     
     <div class="d-flex">
-        <div class="flex-shrink-1">
+        <!-- left sidebar -->
+        <div  class="flex-shrink-1">
             <aside>
-                <div class="row">
-                <!-- left sidebar -->
-                <!-- how to make changes to the background color of the sidebar -->
-                <!-- the icons should be bootstrap icons?, if yes is it okay use different icons if the icon need to be paid?-->
-                <!-- the logo can be img?? -->
-                <!-- how to extend the sidebar -->
-                    <div class="d-flex flex-column flex-shrink-0 p-3 text-bg-dark" style="width: 280px;"> 
-                        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
-                            <svg class="bi pe-none me-2" width="40" height="32" aria-hidden="true">
-                                <use xlink:href="#bootstrap"></use>
-                            </svg> 
-                            <span class="fs-4">Dashboard Kit</span> 
+                <div id="sidebar"class="row">
+                    <div class="d-flex flex-column flex-shrink-0 p-3 text-bg-dark"> 
+                        <a href="/" class="d-flex justify-content-center text-decoration-none p-4">
+                            <p id="Title" class="m-1">Dashboard Kit</p> 
                         </a> 
-                        <hr> 
-                        <ul class="nav nav-pills flex-column mb-auto"> 
+                        
+                        <ul class="nav nav-pills flex-column mb-0 mt-3"> 
                             <li> 
-                                <a href="#" class="nav-link text-white"> 
-                                    <svg class="bi pe-none me-2" width="16" height="16" aria-hidden="true">
-                                        <use xlink:href="#speedometer2"></use>
-                                    </svg>
-                                    Overview
-                                </a> 
+                                <a href="#" id="CatogoryText" class="nav-link text-white px-5">Overview</a> 
                             </li> 
                             <li> 
-                                <a href="#" class="nav-link text-white"> 
-                                    <svg class="bi pe-none me-2" width="16" height="16" aria-hidden="true">
-                                        <use xlink:href="#speedometer2"></use>
-                                    </svg>
-                                    Tickets
-                                </a> 
+                                <a href="#" id="CatogoryText" class="nav-link text-white px-5">Tickets</a> 
                             </li> 
                             <li> 
-                                <a href="#" class="nav-link text-white"> 
-                                    <svg class="bi pe-none me-2" width="16" height="16" aria-hidden="true">
-                                        <use xlink:href="#table"></use>
-                                    </svg>
-                                    Ideas
-                                </a> 
+                                <a href="#" id="CatogoryText" class="nav-link text-white px-5">Ideas</a> 
                             </li> 
                             <li> 
-                                <a href="#" class="nav-link text-white"> 
-                                    <svg class="bi pe-none me-2" width="16" height="16" aria-hidden="true">
-                                        <use xlink:href="#grid"></use>
-                                    </svg>
-                                    Contacts
-                                </a> 
+                                <a href="#" id="CatogoryText" class="nav-link text-white px-5">Contacts</a> 
                             </li> 
                             <li> 
-                                <a href="#" class="nav-link text-white"> 
-                                    <svg class="bi pe-none me-2" width="16" height="16" aria-hidden="true">
-                                        <use xlink:href="#people-circle"></use>
-                                    </svg>
-                                    Agents
-                                </a> 
+                                <a href="#" id="CatogoryText" class="nav-link text-white px-5">Agents</a> 
                             </li> 
                             <li> 
-                                <a href="#" class="nav-link text-white"> 
-                                    <svg class="bi pe-none me-2" width="16" height="16" aria-hidden="true">
-                                        <use xlink:href="#people-circle"></use>
-                                    </svg>
-                                    Articles
-                                </a> 
+                                <a href="#" id="CatogoryText" class="nav-link text-white px-5">Articles</a> 
                             </li> 
 
                             <li> 
-                                <a href="#" class="nav-link text-white"> 
-                                    <svg class="bi pe-none me-2" width="16" height="16" aria-hidden="true">
-                                        <use xlink:href="#people-circle"></use>
-                                    </svg>
-                                    Agents
-                                </a> 
+                                <a href="#" class="nav-link text-white px-5">Agents</a> 
                             </li> 
                         </ul>  
                         <hr>
                         <ul class="nav nav-pills flex-column mb-auto"> 
                             <li class="nav-item"> 
-                                <a href="#" class="nav-link text-white"> 
-                                    <svg class="bi pe-none me-2" width="16" height="16" aria-hidden="true">
-                                        <use xlink:href="#gear"></use>
-                                    </svg>
-                                    Settings
-                                </a> 
+                                <a href="#" class="nav-link text-white px-5">Settings</a> 
                             </li> 
                             <li class="nav-item"> 
-                                <a href="#" class="nav-link text-white"> 
-                                    <svg class="bi pe-none me-2" width="16" height="16" aria-hidden="true">
-                                        <use xlink:href="#gear"></use>
-                                    </svg>
-                                    Subscription
-                                </a> 
+                                <a href="#" class="nav-link text-white px-5">Subscription</a> 
                             </li> 
                         </ul>
                     </div>
@@ -112,31 +60,29 @@
             </aside>
         </div>
         <div class="px-5 w-100">
+            <!-- Top Nav bar  -->
             <header>
                 <div class="row">
-                <!-- Top Nav bar  -->
-                <!-- how to make it on top of the page -->
-                    <div class="d-flex flex-wrap justify-content-center py-3 mb-4"> 
-                        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"> 
-                            <span class="fs-4">Overview</span> 
+                    <div class="d-flex flex-wrap justify-content-center mt-3 py-3 mb-4"> 
+                        <a href="/" class="d-flex align-items-center me-md-auto link-body-emphasis text-decoration-none"> 
+                            <span class="fs-4 fw-medium">Overview</span> 
                         </a> 
                         <ul class="nav nav-pills"> 
                             <li class="nav-item">
                                 <!-- search icon -->
-                                <a href="#" class="nav-link" aria-current="page">O</a>
+                                <a href="#" id="search" class="nav-link" aria-current="page">Search</a>
                             </li> 
                             <li class="nav-item">
                                 <!-- alert icon -->
-                                <a href="#" class="nav-link">I</a>
+                                <a href="#" id="alarm" class="nav-link">Alarm</a>
                             </li> 
-                            <hr>
                             <li class="nav-item">
                                 <!-- Jones Ferdinand -->
-                                <a href="#" class="nav-link">Jone Ferdinand</a>
+                                <a href="#" id="jones" class="nav-link">Jone Ferdinand</a>
                             </li>  
                             <li class="dropdown text-end"> 
                                 <a href="#" class="text-decoration-none" aria-expanded="true">
-                                    <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle"> 
+                                    <img src="https://github.com/mdo.png" alt="mdo" width="40" height="40" class="rounded-circle"> 
                                 </a> 
                             </li>
                         </ul> 
@@ -144,157 +90,162 @@
                 </div>
             </header>
 
-            <!-- how to change text color? -->
             <main>
+                <!-- First section - Cards -->
                 <section class="container-fluid">
-                    <div class="row row-cols-1 row-cols-md-4 mb-4 text-center g-4"> 
+                    <div class="row row-cols-md-4 mb-4 text-center"> 
                         <div class="col"> 
-                            <div class="card text-bg-light mb-1" style="max-width: 18rem;">  
+                            <div id="WhiteBG" class="card text-bg-light mb-1">  
                                 <div class="card-body">
-                                    <h4 class="card-title text-muted fw-medium mb-1">Unresolved</h4> 
-                                    <h1 class="card-title fs-1 fw-bold mb-0">60</h1> 
+                                    <h4 id="OverviewText" class="card-title fw-medium">Unresolved</h4> 
+                                    <h1 id="OverviewNumber" class="card-title">60</h1> 
                                 </div> 
                             </div> 
                         </div> 
                         <div class="col"> 
-                            <div class="card text-bg-light mb-1" style="max-width: 18rem;">  
+                            <div id="WhiteBG" class="card text-bg-light mb-1">  
                                 <div class="card-body">
-                                    <h4 class="card-title text-muted fw-medium mb-1">Overdue</h4> 
-                                    <h1 class="card-title fs-1 fw-bold mb-0">16</h1> 
+                                    <h4 id="OverviewText" class="card-title fw-medium">Overdue</h4> 
+                                    <h1 id="OverviewNumber" class="card-title">16</h1> 
                                 </div> 
                             </div> 
                         </div> 
                         <div class="col"> 
-                            <div class="card text-bg-light mb-1" style="max-width: 18rem;">  
+                            <div id="WhiteBG" class="card text-bg-light mb-1">  
                                 <div class="card-body">
-                                    <h4 class="card-title text-muted fw-medium mb-1">Open</h4> 
-                                    <h1 class="card-title fs-1 fw-bold mb-0">43</h1> 
+                                    <h4 id="OverviewText" class="card-title fw-medium">Open</h4> 
+                                    <h1 id="OverviewNumber" class="card-title">43</h1> 
                                 </div> 
                             </div> 
                         </div> 
                         <div class="col"> 
-                            <div class="card text-bg-light mb-1" style="max-width: 18rem;">  
+                            <div id="WhiteBG" class="card text-bg-light mb-1">  
                                 <div class="card-body">
-                                    <h4 class="card-title text-muted fw-medium mb-1">On hold</h4> 
-                                    <h1 class="card-title fs-1 fw-bold mb-0">64</h1> 
+                                    <h4 id="OverviewText" class="card-title fw-medium">On hold</h4> 
+                                    <h1 id="OverviewNumber" class="card-title">64</h1> 
                                 </div> 
                             </div> 
                         </div> 
                     </div>
                 </section>
 
+                <!-- Second section - Today's trends -->
                 <section class="card border mb-4">
-                    <div class="row mb-3 text-dark"> 
-                        <div class="col-md-8 themed-grid-col ">
-                            <h1 class="fw-medium">Today's trends</h1>
-                            <ul class="d-flex flex-column flex-sm-row justify-content-between align-items-center list-unstyled mb-0">
-                                <li class="text-muted fw-normal">as of 25 May 2019, 09:41 PM</li>
-                                <li class="text-muted fw-normal d-flex flex-wrap justify-content-center align-items-center">
+                    <!-- chart -->
+                    <div class="row"> 
+                        <div class="col-md-8 ">
+                            <h1 id="OverviewText" class="fw-medium p-4 pb-0 text-dark">Today's trends</h1>
+                            <ul class="d-flex flex-column flex-sm-row justify-content-between list-unstyled mb-0">
+                                <li id="TwelveText" class="text-muted fw-normal mb-0 ms-4">as of 25 May 2019, 09:41 PM</li>
+                                <li id="TwelveText" class="d-flex flex-wrap justify-content-center gap-5">
                                     <p>Today</p>
                                     <p>Yesterday</p>
                                 </li>
                             </ul>
-                            <img src="assets/img/Graph.svg" alt="Trends Chart" class="img-fluid">
+                            <img src="assets/img/Graph.svg" alt="Trends Chart" class="col-11 img-fluid m-4 pt-4">
                         </div> 
-                        <div class="col-md-4  d-flex flex-column justify-content-between border-start ">
-                            <ul class="nav nav-pills flex-column mb-auto text-center">
-                                <li class="border-bottom"> 
-                                    <h5 class="card-title text-muted fw-medium mb-1">Resolved</h5> 
-                                    <h3 class="card-title fs-1 fw-bold mb-0">449</h3> 
+
+                        <!-- additional information -->
+                        <div class="col-md-4 d-flex flex-column justify-content-center border-start p-o ps-0">
+                            <ul class="text-center p-0 m-0">
+                                <li class="border-bottom p-4 "> 
+                                    <h5 id="SixteenText" class="card-title mb-1">Resolved</h5> 
+                                    <h3 id="TwentyFourText" class="card-title mb-0">449</h3> 
                                 </li> 
-                                <li class="border-bottom"> 
-                                    <h5 class="card-title text-muted fw-medium mb-1">Received</h5> 
-                                    <h3 class="card-title fs-1 fw-bold mb-0">426</h3> 
+                                <li class="border-bottom p-4 "> 
+                                    <h5 id="SixteenText" class="card-title mb-1">Received</h5> 
+                                    <h3 id="TwentyFourText" class="card-title mb-0">426</h3> 
                                 </li> 
-                                <li class="border-bottom"> 
-                                    <h5 class="card-title text-muted fw-medium mb-1">Average first response time</h5> 
-                                    <h3 class="card-title fs-1 fw-bold mb-0">33m</h3> 
+                                <li class="border-bottom p-4 "> 
+                                    <h5 id="SixteenText" class="card-title mb-1">Average first response time</h5> 
+                                    <h3 id="TwentyFourText" class="card-title mb-0">33m</h3> 
                                 </li> 
-                                <li class="border-bottom"> 
-                                    <h5 class="card-title text-muted fw-medium mb-1">Average response time</h5> 
-                                    <h3 class="card-title fs-1 fw-bold mb-0">3h 8m</h3> 
+                                <li class="border-bottom p-4 "> 
+                                    <h5 id="SixteenText" class="card-title mb-1">Average response time</h5> 
+                                    <h3 id="TwentyFourText" class="card-title mb-0">3h 8m</h3> 
                                 </li> 
-                                <li> 
-                                    <h5 class="card-title text-muted fw-medium mb-1">Resolution within SLA</h5> 
-                                    <h3 class="card-title fs-1 fw-bold mb-0">94%</h3> 
+                                <li class="p-4 "> 
+                                    <h5 id="SixteenText" class="card-title  mb-1">Resolution within SLA</h5> 
+                                    <h3 id="TwentyFourText" class="card-title mb-0">94%</h3> 
                                 </li> 
                             </ul>
                         </div> 
                     </div>
                 </section>
 
-
-                <section class="container">
-                    <!-- how to create some space between two cards? -->
-                    <!-- how to remove the line between first and second list? -->
-                        <div class="row g-2">
-                            <div class="col card" style="width: 15rem;">
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">
+                <!-- Third section-Tickets and tasks -->
+                <section class="container mb-5">
+                        <div class="row gap-3">
+                            <!-- unsolved tickets -->
+                            <div class="col card p-4">
+                                <ul class="list-group list-group-flush ">
+                                    <li class="list-group-item border-0 pb-4 mb-2">
                                         <div class="d-flex justify-content-between align-items-center">
-                                            <h5 class="card-title">Unresolved tickets</h5>
-                                            <p class="card-text fw-medium text-primary-emphasis">View details</p>
+                                            <h5 id="NineteenText" class="card-title">Unresolved tickets</h5>
+                                            <p id="FourteenBlueText" class="card-text">View details</p>
                                         </div>
-                                        <small class="card-text text-muted">Group: <span class="fw-medium">Support</span></small>
+                                        <small id="TwelveText" class="card-text">Group: <span id="TwelveBoldText" class="text-dark">Support</span></small>
                                     </li>
-                                    <li class="list-group-item">
+                                    <li class="list-group-item py-3">
                                         <div class="d-flex justify-content-between align-items-center">
-                                            <p>Waiting on Feature Request</p>
-                                            <small class="text-muted">4238</small>
-                                        </div>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <p>Awaiting Customer Response</p>
-                                            <small class="text-muted">1005</small>
+                                            <p id="FourteenText" class="m-0">Waiting on Feature Request</p>
+                                            <small id="small">4238</small>
                                         </div>
                                     </li>
-                                    <li class="list-group-item">
+                                    <li class="list-group-item py-3">
                                         <div class="d-flex justify-content-between align-items-center">
-                                            <p>Awaiting Developer Fix</p>
-                                            <small class="text-muted">914</small>
+                                            <p id="FourteenText" class="m-0">Awaiting Customer Response</p>
+                                            <small id="small">1005</small>
                                         </div>
                                     </li>
-                                    <li class="list-group-item">
+                                    <li class="list-group-item py-3">
                                         <div class="d-flex justify-content-between align-items-center">
-                                            <p>Pending</p>
-                                            <small class="text-muted">281</small>
+                                            <p id="FourteenText" class="m-0">Awaiting Developer Fix</p>
+                                            <small id="small">914</small>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item py-3">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <p id="FourteenText" class="m-0">Pending</p>
+                                            <small id="small">281</small>
                                         </div>
                                     </li>
                                 </ul>
                             </div>
-                            <div class="col card" style="width: 15rem;">
+                            <!-- tasks -->
+                            <div class="col card p-4">
                                 <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">
+                                    <li class="list-group-item border-0 py-3">
                                         <div class="d-flex justify-content-between align-items-center">
-                                            <h5 class="card-title">Tasks</h5>
-                                            <p class="card-text fw-medium text-primary-emphasis">View all</p>
+                                            <h5 id="NineteenText" class="card-title">Tasks</h5>
+                                            <p id="FourteenBlueText" class="card-text">View all</p>
                                         </div>
-                                        <small class="card-text text-muted">Today</small>
+                                        <small id="TwelveText" class="card-text">Today</small>
                                     </li>
-                                    <li class="list-group-item">
+                                    <li class="list-group-item py-3">
                                         <div class="d-flex justify-content-between align-items-center">
-                                            <p>Create new task</p>
-                                            <!-- <i class="fas fa-accessible-icon"></i>  add icon -->
+                                            <p id="FourteenLightText" class="m-0">Create new task</p>
+                                            <button type="button" class="btn btn-light text-muted px-2 py-0 fs-4">+</button>
                                         </div>
                                     </li>
-                                    <li class="list-group-item">
-                                        <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="firstRadio" checked>
-                                        <label class="form-check-label" for="firstRadio">Finish ticket update</label>
-                                        <p class=" badge rounded-pill bg-warning fw-normal">Urgent</p>
+                                    <li class="list-group-item py-3">
+                                        <input type="checkbox" class="form-check-input" id="exampleCheck1" data-has-listeners="true">
+                                        <label class="form-check-label" for="firstRadio" id="FourteenText">Finish ticket update</label>
+                                        <p id="Urgent" class="badge">Urgent</p>
                                     </li>
-                                    <li class="list-group-item">
-                                        <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="secondRadio">
-                                        <label class="form-check-label" for="secondRadio">Create new ticket example</label>
-                                        <p class=" badge rounded-pill bg-success fw-normal">New</p>
+                                    <li class="list-group-item py-3">
+                                        <input type="checkbox" class="form-check-input" id="exampleCheck1" data-has-listeners="true">
+                                        <label class="form-check-label" for="secondRadio" id="FourteenText">Create new ticket example</label>
+                                        <p id="New" class="badge">New</p>
                                     </li>
-                                    <li class="list-group-item">
-                                        <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="thirdRadio">
-                                        <label class="form-check-label" for="thirdRadio">Update ticket report</label>
-                                        <p class=" badge rounded-pill bg-light fw-normal text-muted">Default</p>
+                                    <li class="list-group-item py-3">
+                                        <input type="checkbox" class="form-check-input" id="exampleCheck1" data-has-listeners="true">
+                                        <label class="form-check-label" for="thirdRadio" id="FourteenText">Update ticket report</label>
+                                        <p id="Default" class="badge text-muted">Default</p>
                                     </li>
                                 </ul>                           
                             </div>
+                        </div>
                        
                 </section>
                 

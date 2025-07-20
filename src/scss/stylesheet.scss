@@ -1,0 +1,228 @@
+// Variables 
+// Color
+$color-dark-sidebar: rgba(54, 55, 64, 1);
+$color-light-bg: rgba(247, 248, 252, 1);
+$color-white: #FFFFFF;
+$color-text-sidebar-title: rgba(164, 166, 179, 1);
+$color-text-sidebar-category: rgba(221, 226, 255, 1);
+$color-nav-icon: rgba(197, 199, 205, 1);
+$color-nav-border: rgb(223, 224, 235);
+$color-text-dark: rgba(37, 39, 51, 1);
+$color-text-muted-light: rgba(159, 162, 180, 1);
+$color-text-blue: rgba(55, 81, 255, 1);
+$color-text-light-gray: rgba(197, 199, 205, 1);
+$color-badge-urgent: rgba(254, 196, 0, 1);
+$color-badge-new: rgba(41, 204, 151, 1);
+$color-badge-default: rgba(240, 241, 247, 1);
+
+// Font Weight
+$font-weight-normal: 400;
+$font-weight-medium: 600;
+$font-weight-bold: 700;
+
+// Font Size
+$font-size-11px: 11px;
+$font-size-12px: 12px;
+$font-size-14px: 14px;
+$font-size-16px: 16px;
+$font-size-19px: 19px;
+$font-size-24px: 24px;
+$font-size-40px: 40px;
+
+// Letter Spacing
+$letter-spacing-0-1px: 0.1px;
+$letter-spacing-0-2px: 0.2px;
+$letter-spacing-0-3px: 0.3px;
+$letter-spacing-0-4px: 0.4px;
+$letter-spacing-1px: 1px;
+
+// Line Height
+$line-height-100: 100%;
+$line-height-16px: 16px;
+$line-height-20px: 20px;
+$line-height-22px: 22px;
+
+// Width and Height
+$sidebar-width: 255px;
+$badge-width: 74px;
+$badge-height: 24px;
+
+
+// General styles
+html, body {
+  height: 100%;
+  width: 100vw;
+  margin: 0;
+  background-color: $color-light-bg !important;
+}
+
+li {
+  list-style-type: none;
+}
+
+#WhiteBG { // Keeping ID selector as per your original
+  background-color: $color-white !important;
+}
+
+
+// Sidebar styles
+#sidebar { 
+  width: $sidebar-width;
+  min-height: 100vh;
+  background-color: $color-dark-sidebar;
+
+  #Title { 
+    font-weight: $font-weight-bold;
+    font-size: $font-size-19px;
+    color: $color-text-sidebar-title;
+    letter-spacing: $letter-spacing-0-4px;
+    line-height: $line-height-100;
+  }
+
+  #CatogoryText {
+    font-weight: $font-weight-normal;
+    font-size: $font-size-16px;
+    color: $color-text-sidebar-category;
+    letter-spacing: $letter-spacing-0-2px;
+    line-height: $line-height-100;
+  }
+}
+
+
+// Top Nav bar styles-header(html)
+#alarm { // Keeping ID selector as per your original
+  border-right: $color-nav-border 2px solid;
+  border-radius: 0%;
+  color: $color-nav-icon;
+}
+
+#search {
+  color: $color-nav-icon;
+}
+
+#jones {
+  color: $color-text-dark;
+}
+
+
+// Text styles
+#OverviewText {
+  font-weight: $font-weight-bold;
+  font-size: $font-size-19px;
+  color: $color-text-muted-light;
+  letter-spacing: $letter-spacing-0-4px;
+}
+
+#OverviewNumber { 
+  font-weight: $font-weight-bold;
+  font-size: $font-size-40px;
+  color: $color-text-dark;
+  letter-spacing: $letter-spacing-1px;
+  line-height: $line-height-100;
+}
+
+#TwelveText {
+  font-weight: $font-weight-normal;
+  font-size: $font-size-12px;
+  color: $color-text-muted-light;
+  letter-spacing: $letter-spacing-0-1px;
+  line-height: $line-height-16px;
+}
+
+#TwelveBoldText {
+  font-weight: $font-weight-medium;
+  font-size: $font-size-12px;
+  color: $color-text-muted-light;
+  letter-spacing: $letter-spacing-0-1px;
+  line-height: $line-height-16px;
+}
+
+#NineteenText { 
+  font-weight: $font-weight-bold;
+  font-size: $font-size-19px;
+  color: $color-text-dark;
+  letter-spacing: $letter-spacing-0-4px;
+}
+
+#SixteenText { 
+  font-weight: $font-weight-medium;
+  font-size: $font-size-16px;
+  color: $color-text-muted-light;
+  letter-spacing: $letter-spacing-0-3px;
+  line-height: $line-height-22px;
+}
+
+#FourteenBlueText { 
+  font-weight: $font-weight-medium;
+  font-size: $font-size-14px;
+  color: $color-text-blue;
+  letter-spacing: $letter-spacing-0-2px;
+  line-height: $line-height-20px;
+}
+
+#FourteenText {
+  font-weight: $font-weight-medium;
+  font-size: $font-size-14px;
+  color: $color-text-dark;
+  letter-spacing: $letter-spacing-0-2px;
+  line-height: $line-height-20px;
+}
+
+#FourteenLightText { 
+  font-weight: $font-weight-medium;
+  font-size: $font-size-14px;
+  color: $color-text-light-gray;
+  letter-spacing: $letter-spacing-0-2px;
+  line-height: $line-height-20px;
+}
+
+#TwentyFourText { 
+  font-weight: $font-weight-bold;
+  font-size: $font-size-24px;
+  color: $color-text-dark;
+  letter-spacing: $letter-spacing-0-3px;
+  line-height: $line-height-100;
+}
+
+#small { 
+  color: $color-text-muted-light;
+}
+
+
+// Badge styles
+#Urgent { 
+  width: $badge-width;
+  height: $badge-height;
+  margin-left: 49%;
+  margin-bottom: 0%;
+  background-color: $color-badge-urgent;
+}
+
+#New { 
+  width: $badge-width;
+  height: $badge-height;
+  margin-left: 39%;
+  margin-bottom: 0%;
+  background-color: $color-badge-new;
+}
+
+#Default { 
+  width: $badge-width;
+  height: $badge-height;
+  margin-left: 47%;
+  margin-bottom: 0%;
+  background-color: $color-badge-default;
+}
+
+#BadgeText { 
+  font-weight: $font-weight-bold;
+  font-size: $font-size-11px;
+  color: $color-white;
+  line-height: $line-height-100;
+}
+
+
+//  Mobile First 
+@media screen and (max-width: 650px) {
+
+}

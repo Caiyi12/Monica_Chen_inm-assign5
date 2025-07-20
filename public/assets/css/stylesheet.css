@@ -1,0 +1,163 @@
+html, body {
+  height: 100%;
+  width: 100vw;
+  margin: 0;
+  background-color: rgb(247, 248, 252) !important;
+}
+
+li {
+  list-style-type: none;
+}
+
+#WhiteBG {
+  background-color: #FFFFFF !important;
+}
+
+#sidebar {
+  width: 255px;
+  min-height: 100vh;
+  background-color: rgb(54, 55, 64);
+}
+#sidebar #Title {
+  font-weight: 700;
+  font-size: 19px;
+  color: rgb(164, 166, 179);
+  letter-spacing: 0.4px;
+  line-height: 100%;
+}
+#sidebar #CatogoryText {
+  font-weight: 400;
+  font-size: 16px;
+  color: rgb(221, 226, 255);
+  letter-spacing: 0.2px;
+  line-height: 100%;
+}
+
+#alarm {
+  border-right: rgb(223, 224, 235) 2px solid;
+  border-radius: 0%;
+  color: rgb(197, 199, 205);
+}
+
+#search {
+  color: rgb(197, 199, 205);
+}
+
+#jones {
+  color: rgb(37, 39, 51);
+}
+
+#OverviewText {
+  font-weight: 700;
+  font-size: 19px;
+  color: rgb(159, 162, 180);
+  letter-spacing: 0.4px;
+}
+
+#OverviewNumber {
+  font-weight: 700;
+  font-size: 40px;
+  color: rgb(37, 39, 51);
+  letter-spacing: 1px;
+  line-height: 100%;
+}
+
+#TwelveText {
+  font-weight: 400;
+  font-size: 12px;
+  color: rgb(159, 162, 180);
+  letter-spacing: 0.1px;
+  line-height: 16px;
+}
+
+#TwelveBoldText {
+  font-weight: 600;
+  font-size: 12px;
+  color: rgb(159, 162, 180);
+  letter-spacing: 0.1px;
+  line-height: 16px;
+}
+
+#NineteenText {
+  font-weight: 700;
+  font-size: 19px;
+  color: rgb(37, 39, 51);
+  letter-spacing: 0.4px;
+}
+
+#SixteenText {
+  font-weight: 600;
+  font-size: 16px;
+  color: rgb(159, 162, 180);
+  letter-spacing: 0.3px;
+  line-height: 22px;
+}
+
+#FourteenBlueText {
+  font-weight: 600;
+  font-size: 14px;
+  color: rgb(55, 81, 255);
+  letter-spacing: 0.2px;
+  line-height: 20px;
+}
+
+#FourteenText {
+  font-weight: 600;
+  font-size: 14px;
+  color: rgb(37, 39, 51);
+  letter-spacing: 0.2px;
+  line-height: 20px;
+}
+
+#FourteenLightText {
+  font-weight: 600;
+  font-size: 14px;
+  color: rgb(197, 199, 205);
+  letter-spacing: 0.2px;
+  line-height: 20px;
+}
+
+#TwentyFourText {
+  font-weight: 700;
+  font-size: 24px;
+  color: rgb(37, 39, 51);
+  letter-spacing: 0.3px;
+  line-height: 100%;
+}
+
+#small {
+  color: rgb(159, 162, 180);
+}
+
+#Urgent {
+  width: 74px;
+  height: 24px;
+  margin-left: 49%;
+  margin-bottom: 0%;
+  background-color: rgb(254, 196, 0);
+}
+
+#New {
+  width: 74px;
+  height: 24px;
+  margin-left: 39%;
+  margin-bottom: 0%;
+  background-color: rgb(41, 204, 151);
+}
+
+#Default {
+  width: 74px;
+  height: 24px;
+  margin-left: 47%;
+  margin-bottom: 0%;
+  background-color: rgb(240, 241, 247);
+}
+
+#BadgeText {
+  font-weight: 700;
+  font-size: 11px;
+  color: #FFFFFF;
+  line-height: 100%;
+}
+
+/*# sourceMappingURL=stylesheet.css.map */
